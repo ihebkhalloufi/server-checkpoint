@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="close.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Close</title>
+</head>
+<body onload="startTime()" >  
+</div>
+</nav>
+</div>
+<nav>
+<div class="menu">
+<div class="logo">
+<a href="#">Devlopper Website</a>
+</div>
+<ul>
+
+
+</ul>
+</div>
+</nav>
+
+<img class="img"src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720__480.jpg"/>
+
+<div class="center">
+<div class="title">Sorry Server </div>
+<div class="sub_title">Is Not Nnline yet</div>
+<div class="btns">
+   <div class="sub_title">Clock</div>
+    <div id="txt"></div>
+    
+    <script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  
+      return i;
+    }
+    </script>
+    
+</div>
+</div>
+
+</body>
+</html>
